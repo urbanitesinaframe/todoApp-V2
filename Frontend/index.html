@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-App V2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ToDo App</h1>
+    </header>
+    <main id="main">
+        <div id="uiContainer">
+            <div id="filterContainer">
+                <p>Show: </p>
+                <label for="All">All</label>
+                <input type="radio" id="All" name="filter" checked>
+                <label for="Open">Open</label>
+                <input type="radio" id="Open" name="filter">
+                <label for="Done">Done</label>
+                <input type="radio" id="Done" name="filter">
+
+            </div>
+            <div class="inputContainer">
+                <input type="text" id="toDoInput" name="description" placeholder="Please type in your task">
+                <button id="addNewToDoBtn">Add to-do</button>
+            </div>
+        </div>
+        <article id="toDoListContainer">
+            <ul id="toDoList"></ul>
+        </article>
+        <button id="delBtn">Delete done!</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

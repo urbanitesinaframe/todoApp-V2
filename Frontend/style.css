@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: monospace;
+}
+header {
+  font-family: "Audiowide", cursive;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 238, 171);
+}
+.strikeThrough {
+  text-decoration: line-through;
+}
+
+main {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#delBtn {
+  margin: 2rem auto;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 51, 0);
+  border-radius: 1rem;
+  border: none;
+  width: 20ch;
+}
+
+#delBtn:hover {
+  cursor: pointer;
+}
+
+#delBtn:active {
+  transform: scale(95%);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 45%;
+  margin: 1rem;
+}
+#toDoInput {
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  border: 5px solid gold;
+  border-radius: 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+#filterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#filterContainer > p {
+  margin: 0 1rem 0 0;
+}
+
+#addNewToDoBtn {
+  background-color: lightgreen;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+#addNewToDoBtn:hover {
+  cursor: pointer;
+}
+
+#addNewToDoBtn:active {
+  transform: scale(95%);
+}
+
+li {
+  margin: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#toDoListContainer {
+  text-align: center;
+  font-size: 1.5rem;
+  background-size: 2.5rem 2.5rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.109) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgb(252, 252, 168), rgb(252, 252, 168));
+}
+
+#toDoList {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 1rem;
+}
